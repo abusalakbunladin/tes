@@ -9,22 +9,33 @@
 <body>
     <header class="navbar">
         <div class="brand">
-            <img src="img/misal.webp" alt="Logo Jasa" class="brand-img">
-            <h1 class="brand-title">Jasa</h1>
+            <!-- Sisi Kiri Baris 1 -->
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <img src="img/misal.webp" alt="Logo Jasa" class="brand-img">
+                <h1 class="brand-title">Jasa</h1>
+            </div>
+            
+            <!-- Sisi Kanan Baris 1 (Meniru info kontak/pencarian seperti foto kedua) -->
+            <!-- Catatan: Anda bisa mengisi bagian ini nanti, flexbox otomatis mendorongnya ke kanan -->
+            <div class="brand-info" style="color: white; font-size: 0.9rem; display: flex; gap: 20px;">
+                <!-- Tempat kontak atau pencarian tambahan jika ada -->
+            </div>
         </div>   
         
-      
+        <!-- Baris 2 -->
         <nav class="nav-menu">
-            <a href="#" class="home-logo" aria-label="Homepage">
-                <div class="house-roof"></div>
-                <div class="house-body"></div>
-            </a>
-            <a href="#jasa" class="nav-link">Jasa</a>
-            <a href="#kontak" class="nav-link">Kontak</a>
-            <a href="#tentang" class="nav-link">Tentang Kami</a>
+            <!-- Ditambahkan pembungkus ini agar posisi teks lurus vertikal dengan logo di atas -->
+            <div class="nav-menu-container">
+                <a href="#" class="home-logo" aria-label="Homepage">
+                    <div class="house-roof"></div>
+                    <div class="house-body"></div>
+                </a>
+                <a href="#jasa" class="nav-link">Jasa</a>
+                <a href="#kontak" class="nav-link">Kontak</a>
+                <a href="#tentang" class="nav-link">Tentang Kami</a>
+            </div>
         </nav>
     </header>
-
     <div class="container">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra ex eu nisi tincidunt bibendum. Vivamus quis lectus tellus. Suspendisse at mi tristique, eleifend odio sed, facilisis felis. Maecenas sollicitudin sapien ante, et accumsan arcu interdum eu. Donec feugiat feugiat nisi non maximus. Nulla volutpat facilisis posuere. Ut convallis interdum diam interdum imperdiet. Maecenas sit amet aliquet arcu.</P>
             <br>
