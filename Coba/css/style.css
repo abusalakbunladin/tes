@@ -21,18 +21,16 @@ body {
   width: 100%;
 }
 
-/* --- BARIS 1: LOGO DAN INFO KANAN --- */
 .brand {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Membuat logo di kiri dan info di kanan */
-  max-width: 1200px;             /* Mengunci batas lebar agar sejajar dengan footer/konten */
+  justify-content: space-between; 
+  max-width: 1200px;             
   width: 100%;
-  margin: 0 auto;                /* Memaksa kontainer ini berada di tengah halaman */
-  padding: 15px 30px;            /* Memberikan jarak bagian dalam agar tidak mentok */
+  margin: 0 auto;                
+  padding: 15px 30px;            
 }
 
-/* Menghilangkan margin-left lama agar logo pas di batas kiri kontainer */
 .brand-img {
   width: 45px;
   height: 45px;
@@ -40,7 +38,6 @@ body {
   border-radius: 8px;
 }
 
-/* --- BARIS 2: MENU NAVIGASI --- */
 .nav-menu {
   background-color: #3F72AF;
   display: flex;
@@ -49,15 +46,14 @@ body {
   width: 100%;
 }
 
-/* Pembungkus di dalam nav-menu agar teksnya sejajar dengan logo di atas */
 .nav-menu-container {
   display: flex;
   align-items: center;
   gap: 30px;
-  max-width: 1200px;   /* Lebar maksimal disamakan dengan bagian logo */
+  max-width: 1200px;   
   width: 100%;
-  margin: 0 auto;      /* Membuat menu teks rata tengah terhadap halaman */
-  padding: 5px 30px;   /* Padding kiri kanan disamakan agar sejajar lurus ke bawah */
+  margin: 0 auto;      
+  padding: 5px 30px;
 }
 
 .brand {
