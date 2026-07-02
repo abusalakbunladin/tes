@@ -1,6 +1,4 @@
-/* ==========================================================================
-   RESET & BASE STYLES
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,26 +6,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: #f0f4f8;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-/* Container utama pembungkus halaman */
 .wrapper {
     width: 100%;
-    max-width: 750px;
-    background-color: #ffffff;
-    border: 1px solid #b4c6e7;
-    padding: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    max-width: 1200px;  
+    margin: 40px auto;    
+    padding: 0 30px;       
+    background-color: transparent; 
+    box-shadow: none;   
 }
-
-/* ==========================================================================
-   HEADER / JUDUL HALAMAN
-   ========================================================================== */
+    
 .header-title {
     font-size: 16px;
     font-weight: bold;
@@ -38,7 +25,6 @@ body {
     position: relative;
 }
 
-/* Garis aksen kuning di bawah judul */
 .header-title::after {
     content: '';
     position: absolute;
@@ -49,9 +35,7 @@ body {
     background-color: #facc15;
 }
 
-/* ==========================================================================
-   STRUKTUR LIST & KARTU (Flexbox Murni)
-   ========================================================================== */
+
 .Jasa-container {
     display: flex;
     flex-direction: column;
@@ -66,7 +50,7 @@ body {
     overflow: hidden;
 }
 
-/* Sisi Kiri: Kotak Gambar */
+
 .card-thumbnail {
     width: 250px;
     min-width: 250px;
@@ -78,10 +62,10 @@ body {
 .card-thumbnail img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Mencegah gambar menjadi gepeng */
+    object-fit: cover; 
 }
 
-/* Sisi Kanan: Konten Teks */
+
 .card-body {
     flex: 1;
     padding: 12px 15px;
@@ -105,9 +89,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* ==========================================================================
-   FOOTER KARTU (Meta & Tombol)
-   ========================================================================== */
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -119,7 +100,6 @@ body {
     color: #94a3b8;
 }
 
-/* Tombol Cari Biru */
 .btn-search {
     background-color: #0066cc;
     width: 28px;
@@ -137,35 +117,16 @@ body {
     background-color: #004b99;
 }
 
-/* Mengatur ukuran gambar di dalam tombol search */
+
 .img-icon {
-    width: 14px;  /* Sesuaikan ukuran lebar ikon di sini */
-    height: 14px; /* Sesuaikan ukuran tinggi ikon di sini */
-    object-fit: contain; /* Menjaga proporsi ikon agar tidak gepeng */
+    width: 14px; 
+    height: 14px;
+    object-fit: contain;
     display: block;
 }
 
-/* Sedikit penyesuaian pada tombol jika diperlukan */
-.btn-search {
-    background-color: #0066cc;
-    width: 28px;
-    height: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background 0.2s;
-    border: none;
-}
 
-.btn-search:hover {
-    background-color: #004b99;
-}
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (Otomatis rapi saat layar HP)
-   ========================================================================== */
 @media (max-width: 550px) {
     .Jasa-card {
         flex-direction: column;
