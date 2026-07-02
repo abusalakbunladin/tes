@@ -6,15 +6,46 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .wrapper {
     width: 100%;
-    max-width: 1200px;  
-    margin: 40px auto;    
-    padding: 0 30px;       
-    background-color: transparent; 
-    box-shadow: none;   
+    max-width: 1200px;    
+    margin: 40px auto;     
+    padding: 0 30px;     
 }
-    
+
+
+.Jasa-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 750px;  
+    width: 100%;
+}
+
+
+.header-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e3a8a;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #1e40af; 
+    position: relative;
+    width: 100%;          
+}
+
+
+.header-title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 30%;
+    width: 70%;
+    height: 3px;
+    background-color: #facc15;
+}
+
 .header-title {
     font-size: 16px;
     font-weight: bold;
