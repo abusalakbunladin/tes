@@ -170,3 +170,252 @@
         gap: 10px;
     }
 }
+    
+ /* ==========================================================================
+   TABEL PAKET HARGA (PRICING TABLE MIRIP IMAGE_BF0F29.PNG)
+   ========================================================================== */
+
+.pricing-section {
+    width: 100%;
+    margin: 50px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Bagian Judul Atas */
+.pricing-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.badge-promo {
+    display: inline-block;
+    background-color: #e2f2e9;
+    color: #15803d;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.pricing-header h2 {
+    font-size: 28px;
+    color: #112D4E;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pricing-header p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* Container Pembungkus Kartu */
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    
+
+    width: 100%;
+    max-width: 950px;     
+    margin: 0 auto;     
+    padding: 10px;
+}
+
+
+.pricing-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px 20px;   
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    position: relative;
+    transition: transform 0.3s ease;
+    max-width: 320px;     
+}
+
+
+.pricing-card.highlighted {
+    background-color: #112D4E; 
+    color: #ffffff;
+    border: 2px solid #3F72AF;
+    transform: scale(1.02); 
+    box-shadow: 0 10px 25px rgba(17, 45, 78, 0.15);
+}
+
+
+.badge-popular {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #22c55e;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+
+.card-top {
+    margin-bottom: 25px;
+}
+
+.packet-tag {
+    font-size: 11px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.blue-text { color: #3F72AF; }
+.blue-light-text { color: #adc5f1; }
+
+.pricing-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: inherit;
+}
+
+.pricing-card:not(.highlighted) h3 {
+    color: #334155;
+}
+
+
+.old-price {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #94a3b8;
+    margin-bottom: 2px;
+}
+
+.current-price {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pricing-card:not(.highlighted) .current-price {
+    color: #112D4E;
+}
+
+.badge-save {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.green-light { background-color: #f0fdf4; color: #16a34a; }
+.green-solid { background-color: #22c55e; color: #ffffff; }
+
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.pricing-features li {
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.pricing-card:not(.highlighted) .pricing-features li {
+    color: #475569;
+}
+
+.check-icon {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.duration {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.pricing-card:not(.highlighted) .duration {
+    color: #112D4E;
+}
+
+.flash-icon {
+    color: #eab308;
+}
+
+
+.btn-packet {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-packet.outline {
+    border: 1px solid #112D4E;
+    color: #112D4E;
+    background-color: transparent;
+}
+
+.btn-packet.outline:hover {
+    background-color: #112D4E;
+    color: white;
+}
+
+.btn-packet.solid {
+    background-color: #22c55e;
+    color: white;
+}
+
+.btn-packet.solid:hover {
+    background-color: #16a34a;
+}
+
+
+.pricing-footer-text {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-top: 35px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 992px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .pricing-card {
+        width: 100%;
+        max-width: 450px;
+        transform: none !important;
+    }
+}
