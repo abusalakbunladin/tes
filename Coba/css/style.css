@@ -68,11 +68,12 @@ body {
   color: #F9F7F7;
   font-weight: 500;
   font-size: 1rem;
-  transition: transform 023s ease;
+  transition: transform 0.2s ease;
 }
 
 .nav-link:hover {
   transform: scale(1.1);
+  
 }
 
 .home-logo {
@@ -115,14 +116,6 @@ body {
   width: 6px;
   height: 8px;
   background-color: #3F72AF;
-}
-
-.home-logo:hover .house-roof {
-  border-bottom-color: #e0f2fe;
-}
-
-.home-logo:hover .house-body {
-  background-color: #e0f2fe;
 }
 
 footer {
